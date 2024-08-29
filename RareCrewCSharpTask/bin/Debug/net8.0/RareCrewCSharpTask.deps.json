@@ -1,0 +1,364 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RareCrewCSharpTask/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "OxyPlot.Core": "2.1.2",
+          "OxyPlot.ImageSharp": "2.1.2",
+          "OxyPlot.SkiaSharp": "2.1.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "runtime": {
+          "RareCrewCSharpTask.dll": {}
+        }
+      },
+      "HarfBuzzSharp/2.6.1.4": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HarfBuzzSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.6.1.4"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-armel/native/libHarfBuzzSharp.so": {
+            "rid": "tizen-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-x86/native/libHarfBuzzSharp.so": {
+            "rid": "tizen-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Net.Compilers.Toolset/3.1.0": {},
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "OxyPlot.Core/2.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "OxyPlot.ImageSharp/2.1.2": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2",
+          "SixLabors.ImageSharp": "1.0.0-beta0007",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0007",
+          "SixLabors.Shapes.Text": "1.0.0-beta0009"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.ImageSharp.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "OxyPlot.SkiaSharp/2.1.2": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2",
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "1.68.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.SkiaSharp.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "SixLabors.Core/1.0.0-beta0008": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0-beta0009": {
+        "dependencies": {
+          "SixLabors.Core": "1.0.0-beta0008"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0-beta0007": {
+        "dependencies": {
+          "Microsoft.Net.Compilers.Toolset": "3.1.0",
+          "SixLabors.Core": "1.0.0-beta0008",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/1.0.0-beta0007": {
+        "dependencies": {
+          "Microsoft.Net.Compilers.Toolset": "3.1.0",
+          "SixLabors.Fonts": "1.0.0-beta0009",
+          "SixLabors.ImageSharp": "1.0.0-beta0007",
+          "SixLabors.Shapes": "1.0.0-beta0009"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.Shapes/1.0.0-beta0009": {
+        "dependencies": {
+          "SixLabors.Core": "1.0.0-beta0008"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.Shapes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.Shapes.Text/1.0.0-beta0009": {
+        "dependencies": {
+          "SixLabors.Fonts": "1.0.0-beta0009",
+          "SixLabors.Shapes": "1.0.0-beta0009"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.Shapes.Text.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp/2.88.8": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.8",
+          "SkiaSharp.NativeAssets.macOS": "2.88.8"
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.8.0"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/1.68.3": {
+        "dependencies": {
+          "HarfBuzzSharp": "2.6.1.4",
+          "SkiaSharp": "2.88.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.3.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.8": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.8": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {}
+    }
+  },
+  "libraries": {
+    "RareCrewCSharpTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HarfBuzzSharp/2.6.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7qJsdLtOxDY495v3SV9b8HEyu8/7Sf6OqHjPV5O09qh13r1phDvhj+bOdC+lcvgrF2M/FWq322gOeLgsT9J2cQ==",
+      "path": "harfbuzzsharp/2.6.1.4",
+      "hashPath": "harfbuzzsharp.2.6.1.4.nupkg.sha512"
+    },
+    "Microsoft.Net.Compilers.Toolset/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iwBIkmusIUlBrln8AbKpYIcSGnImCYUMFSC3QOpGuOmnle44w2ORyH8IFDi8rbQNKjDH9HBmtPML/kW3GuxyA==",
+      "path": "microsoft.net.compilers.toolset/3.1.0",
+      "hashPath": "microsoft.net.compilers.toolset.3.1.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "OxyPlot.Core/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
+      "path": "oxyplot.core/2.1.2",
+      "hashPath": "oxyplot.core.2.1.2.nupkg.sha512"
+    },
+    "OxyPlot.ImageSharp/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4CphUkvwb+b89E3SBj2cEc9ZXQ1XGe1LPJ9EiajNRyb7vmFQ7KwJNB3rWa/nhNjzHLc/knqjeBdEg5dD1ehwHw==",
+      "path": "oxyplot.imagesharp/2.1.2",
+      "hashPath": "oxyplot.imagesharp.2.1.2.nupkg.sha512"
+    },
+    "OxyPlot.SkiaSharp/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cR2wrcTvsykHNGm5kWxY4X1RsTDL/KZQ5xQU1mP6Fv+lGtcfmMQ2p1Ti+EQ5Lb5BuDWUTNoFhSCvj0/1LnFgxg==",
+      "path": "oxyplot.skiasharp/2.1.2",
+      "hashPath": "oxyplot.skiasharp.2.1.2.nupkg.sha512"
+    },
+    "SixLabors.Core/1.0.0-beta0008": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rrKPDN107tVOh+mUoNh+kHELa7WfYZREPPbYdiKJ3Rd6dex/UgDWDGBOjPJn4BBhmts/VGuaXMXyfT/BwiuH2g==",
+      "path": "sixlabors.core/1.0.0-beta0008",
+      "hashPath": "sixlabors.core.1.0.0-beta0008.nupkg.sha512"
+    },
+    "SixLabors.Fonts/1.0.0-beta0009": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jCSh8Ei/epW1zInmRReIovIzHGPB1zifwDaj4+Yb7aGCs5MbRHi69kl2+QM9Ov5X19IgKhHn833dd4S0OQ3sEw==",
+      "path": "sixlabors.fonts/1.0.0-beta0009",
+      "hashPath": "sixlabors.fonts.1.0.0-beta0009.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/1.0.0-beta0007": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R7BMm1MPyE3n4kSmTrdhB6iQmIZmSjBhnHG8mYrfi9t5CmIIgXhmGHHLZTZHa17Ka4b5bhUUqssAVEHDlDqnuQ==",
+      "path": "sixlabors.imagesharp/1.0.0-beta0007",
+      "hashPath": "sixlabors.imagesharp.1.0.0-beta0007.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp.Drawing/1.0.0-beta0007": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-luF+sbh2mMdQLa7W5icWsaqp3M3cAPF73Tv8hti7KVxBywKFFEibunqAUYUAJLTiuSpScnjYAhTqHYGuXBChmw==",
+      "path": "sixlabors.imagesharp.drawing/1.0.0-beta0007",
+      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta0007.nupkg.sha512"
+    },
+    "SixLabors.Shapes/1.0.0-beta0009": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H9c2mZ4JYHdkv1xFfU3f2kUE8qzzFrlc9tIPVewz/tqp3sZh91fvXZM520MaJGDvh/+BnsBnjEgkArZqDy36Yw==",
+      "path": "sixlabors.shapes/1.0.0-beta0009",
+      "hashPath": "sixlabors.shapes.1.0.0-beta0009.nupkg.sha512"
+    },
+    "SixLabors.Shapes.Text/1.0.0-beta0009": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PBs7bfE7opDNHGbJ0Wj1jKbIP5nySG/RB4fpw7R55VURQfEOKppMD/AkqXw+3kOqOEXYEjLg5myVneom4Y8jw==",
+      "path": "sixlabors.shapes.text/1.0.0-beta0009",
+      "hashPath": "sixlabors.shapes.text.1.0.0-beta0009.nupkg.sha512"
+    },
+    "SkiaSharp/2.88.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bRkp3uKp5ZI8gXYQT57uKwil1uobb2p8c69n7v5evlB/2JNcMAXVcw9DZAP5Ig3WSvgzGm2YSn27UVeOi05NlA==",
+      "path": "skiasharp/2.88.8",
+      "hashPath": "skiasharp.2.88.8.nupkg.sha512"
+    },
+    "SkiaSharp.HarfBuzz/1.68.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zo/bZafpVYyUbl2W+Fvgqkt9tfLnUPsfm8NI2ULhxVgD56NI0PoOKrZL72fh9ORa2QG9agaRmW160308naGuuA==",
+      "path": "skiasharp.harfbuzz/1.68.3",
+      "hashPath": "skiasharp.harfbuzz.1.68.3.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Kn5TSkKlfyS6azWHF3Jk2sW5C4jCE5uSshM/5AbfFrR+5n6qM5XEnz9h4VaVl7LTxBvHvMkuPb/3bpbq0vxTw==",
+      "path": "skiasharp.nativeassets.macos/2.88.8",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.8.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O9QXoWEXA+6cweR4h3BOnwMz+pO9vL9mXdjLrpDd0w1QzCgWmLQBxa1VgySDITiH7nQndrDG1h6937zm9pLj1Q==",
+      "path": "skiasharp.nativeassets.win32/2.88.8",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.8.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    }
+  }
+}
