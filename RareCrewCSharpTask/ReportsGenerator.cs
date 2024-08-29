@@ -5,6 +5,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using OxyPlot;
+using OxyPlot.Series;
 
 namespace EmployeeTimeReport
 {
@@ -31,6 +33,12 @@ namespace EmployeeTimeReport
             var htmlContent = GenerateHtml(employeeHours);
             System.IO.File.WriteAllText("EmployeeReport.html", htmlContent);
             Console.WriteLine("HTML report generated: EmployeeReport.html");
+            
+            // Generate PieChart
+            var totalHours = employeeHours.Values.Sum();
+            var plotModel = CreatePieChart(employeeHours, totalHours);
+            SavePlotAsPng(plotModel, "EmployeeTimeChart.png");
+            Console.WriteLine("PNG image generated: EmployeeTimeChart.png");
         }
 
         private static async Task<List<TimeEntry>> GetTimeEntriesAsync()
@@ -91,6 +99,44 @@ namespace EmployeeTimeReport
             sb.Append("</body></html>");
 
             return sb.ToString();
+        }
+        
+        private static PlotModel CreatePieChart(Dictionary<string, double> employeeHours, double totalHours)
+        {
+            var plotModel = new PlotModel
+            {
+                Title = "Employee Time Distribution",
+                TitlePadding = 20,
+                Background = OxyColors.White
+            };
+
+            var pieSeries = new PieSeries
+            {
+                InsideLabelPosition = 0.8,
+                StrokeThickness = 1.0,
+                AngleSpan = 360,
+                StartAngle = 0
+            };
+
+            foreach (var entry in employeeHours)
+            {
+                var percentage = (entry.Value / totalHours) * 100;
+                pieSeries.Slices.Add(new PieSlice(entry.Key, percentage));
+            }
+
+            plotModel.Series.Add(pieSeries);
+
+            return plotModel;
+        }
+
+        private static void SavePlotAsPng(PlotModel plotModel, string fileName)
+        {
+            var pngExporter = new OxyPlot.SkiaSharp.PngExporter { Width = 800, Height = 600 };
+
+            using (var stream = System.IO.File.Create(fileName))
+            {
+                pngExporter.Export(plotModel, stream);
+            }
         }
     }
 }
